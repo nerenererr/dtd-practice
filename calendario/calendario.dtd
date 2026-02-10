@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE calendario [
+    <!ELEMENT calendario (evento+)>
+    <!ELEMENT evento (titulo, fecha, descripcion?, ubicacion?)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT ubicacion (#PCDATA)>
+]>
+<calendario>
+    <evento>
+        <titulo>Reunión de equipo</titulo>
+        <fecha>2024-02-15</fecha>
+        <descripcion>Revisión del progreso del proyecto Q1</descripcion>
+        <ubicacion>Sala de conferencias 3B</ubicacion>
+    </evento>
+    <evento>
+        <titulo>Conferencia de tecnología</titulo>
+        <fecha>2024-03-20</fecha>
+        <ubicacion>Centro de Convenciones de Sevilla</ubicacion>
+    </evento>
+    <evento>
+        <titulo>Entrega de proyecto</titulo>
+        <fecha>2024-04-01</fecha>
+        <descripcion>Fecha límite para la entrega del módulo de facturación</descripcion>
+    </evento>
+</calendario>

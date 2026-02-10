@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (fecha, cliente, productos)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT cliente (nombre, direccion?, telefono?, email?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT productos (producto+)>
+    <!ELEMENT producto (nombre, cantidad, precio)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<factura>
+    <fecha>2024-02-10</fecha>
+    <cliente>
+        <nombre>María García</nombre>
+        <direccion>Calle Mayor 123, Sevilla</direccion>
+        <telefono>954123456</telefono>
+        <email>maria@email.com</email>
+    </cliente>
+    <productos>
+        <producto>
+            <nombre>Portátil Dell</nombre>
+            <cantidad>1</cantidad>
+            <precio>899.99</precio>
+        </producto>
+        <producto>
+            <nombre>Ratón inalámbrico</nombre>
+            <cantidad>2</cantidad>
+            <precio>25.50</precio>
+        </producto>
+    </productos>
+</factura>
