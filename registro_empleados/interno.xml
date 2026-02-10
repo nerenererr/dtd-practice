@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (nombre, id, cargo, salario)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT cargo (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+]>
+<empleados>
+    <empleado>
+        <nombre>Terry</nombre>
+        <id>1</id>
+        <cargo>Ingeniero de Software</cargo>
+        <salario>2700</salario>
+    </empleado>
+    <empleado>
+        <nombre>Diego Alonso</nombre>
+        <id>2</id>
+        <cargo>Product Owner</cargo>
+        <salario>2750</salario>
+    </empleado>
+    <empleado>
+        <nombre>Amaia Ruiz</nombre>
+        <id>3</id>
+        <cargo>Diseñadora UX</cargo>
+        <salario>2200</salario>
+    </empleado>        
+</empleados>
